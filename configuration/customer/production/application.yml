@@ -1,6 +1,6 @@
 server:
-  port: 7777
-accounts:
+  port: 7778
+customer:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
@@ -15,9 +15,3 @@ accounts:
     show-sql: true
     hibernate:
       ddl-auto: update
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
