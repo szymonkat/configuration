@@ -4,7 +4,7 @@ accounts:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    passwOrd: root
+    password: root
     driver-class-name: org.postgresql.Driver
   jpa:
     properties:
