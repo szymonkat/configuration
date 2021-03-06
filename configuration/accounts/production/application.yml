@@ -1,5 +1,4 @@
-server:
-  port: 7777
+
 accounts:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
@@ -15,6 +14,26 @@ accounts:
     show-sql: true
     hibernate:
       ddl-auto: update
+  server:
+    port: 7777
+
+customer:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  allow-get-accounts: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  server:
+    port: 7778
 
 management:
   endpoints:
