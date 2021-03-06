@@ -6,6 +6,7 @@ accounts:
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
+  allow-get-accounts: false
   jpa:
     properties:
       hibernate:
