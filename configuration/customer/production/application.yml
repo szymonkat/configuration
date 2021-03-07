@@ -1,6 +1,6 @@
 server:
   port: 7778
-  max-http-header-size: 20480
+
 customer:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
